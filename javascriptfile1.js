@@ -1,9 +1,19 @@
 function sum() {
-    var sum = 0;
-    for (i = 1; i <= 10; i++) {
-        sum += i;
-
+    var TheAnsweer;
+    startingNumber = 504;
+    endingNumber = 107;
+    stepDown = 38;
+    i = startingNumber;
+    while (i > endingNumber) {
+        i -= stepDown;
+        TheAnsweer += i;
     }
+    return TheAnsweer;
+}
 
-    return sum;
+function PracticeIfThen(inputNumber) {
+    if (inputNumber > 50) {
+        return "YES";
+
+    } else return "NO";
 }
